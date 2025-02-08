@@ -282,7 +282,7 @@ footer {
         transform-origin: left top;
         width: 100vh; /* 100% of the viewport height */
         position: absolute;
-        top: 100vw; /* Shift the rotated page down */
-        left: 0;
+        top: 0; /* Shift the rotated page down */
+        left: calc(100vw - 100vh); /* Adjust for the rotated width */
     }
 }
